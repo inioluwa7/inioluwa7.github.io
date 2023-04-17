@@ -33,6 +33,10 @@
     border-radius: 10px;
     background-color: #fff;
 }
+  
+
+
+
 .edu{
     content: "";
     height: auto;
@@ -52,6 +56,36 @@
 #planet {
     animation: cyber 3s linear infinite;
 }
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1.5s ease-out, transform 1s ease-out;
+  }
+  
+  .slide-in.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .wd.active, .gd.active{
+    display: none;
+  }
+  
+
+  .wd, .gd {
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .wd:hover, .gd:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+
+
+
 
 @keyframes cyber {
     0% {
